@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RepApplication</string>
+    <string name="pick_date">Escolha uma data</string>
 </resources>
