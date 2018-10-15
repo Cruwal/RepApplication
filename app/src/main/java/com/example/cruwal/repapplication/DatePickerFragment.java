@@ -25,6 +25,12 @@ public class DatePickerFragment extends DialogFragment
     }
 
     public void onDateSet(DatePicker view, int year, int month, int day) {
-        //Fazer alguma coisa com a data escolhida
+        populateSetDate(year, month+1, day);
+    }
+
+    public void populateSetDate(int year, int month, int day) {
+        TextView dTV= (TextView)getActivity(). findViewById(R.id.quando_data_TV);
+
+        dTV.setText(day+"/"+month+"/"+year);
     }
 }
