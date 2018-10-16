@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".quemPagouActivity">
+    tools:context=".quaisPagaraoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,6 +12,89 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quem"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quem_pagou_TV"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oque"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/o_que_TV"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quanto"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quanto_TV"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quando"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quando_data_TV_aqp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/escolha_quem"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"/>
+
+       <!-- <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -19,122 +102,137 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            -->
 
-        <CheckBox
-            android:id="@+id/portugaCB"
-            android:layout_width="match_parent"
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Portuga"
-            android:onClick="onCheckBoxClicked"/>
+            android:columnCount="3"
+            android:rowCount="5"
+            android:orientation="horizontal"
+            tools:context=".GridXMLActivity"
+            android:layout_gravity="center_horizontal">
 
-        <CheckBox
-            android:id="@+id/lariCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lari"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/portugaCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Portuga" />
 
-        <CheckBox
-            android:id="@+id/JesusCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Jesus"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/lariCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Lari" />
 
-        <CheckBox
-            android:id="@+id/SempeCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sempe"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/JesusCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Jesus" />
 
-        <CheckBox
-            android:id="@+id/wattsCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Watts"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/SempeCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Sempe" />
 
-        <CheckBox
-            android:id="@+id/junCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Jun"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/wattsCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Watts" />
 
-        <CheckBox
-            android:id="@+id/floydCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Floyd"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/junCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Jun" />
 
-        <CheckBox
-            android:id="@+id/bordelCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bordel"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/floydCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Floyd" />
 
-        </LinearLayout>
+            <CheckBox
+                android:id="@+id/bordelCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Bordel" />
+
+            <!--</LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-        <CheckBox
-            android:id="@+id/xorinCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Xorin"
-            android:onClick="onCheckBoxClicked"/>
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+                -->
+            <CheckBox
+                android:id="@+id/xorinCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Xorin" />
 
-        <CheckBox
-            android:id="@+id/partoCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Parto"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/partoCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Parto" />
 
-        <CheckBox
-            android:id="@+id/muriloCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Murilo"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/muriloCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Murilo" />
 
-        <CheckBox
-            android:id="@+id/danielCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Daniel"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/danielCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Daniel" />
 
-        <CheckBox
-            android:id="@+id/cileneCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cilene"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/cileneCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Cilene" />
 
-        <CheckBox
-            android:id="@+id/perdidoCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Perdido"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/perdidoCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Perdido" />
 
-        <CheckBox
-            android:id="@+id/felinaCB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Felina"
-            android:onClick="onCheckBoxClicked"/>
+            <CheckBox
+                android:id="@+id/felinaCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="Felina" />
 
-            </LinearLayout>
+            <!-- </LinearLayout>
 
-        </LinearLayout>
+        </LinearLayout>-->
+        </GridLayout>
 
         <Button
             android:id="@+id/Test"

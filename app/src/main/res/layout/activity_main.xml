@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="O que:"
+                android:text="@string/oque"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 />
@@ -33,7 +33,7 @@
                 />
         </LinearLayout>
 
-        <!--
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,19 +42,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quem pagou:"
+                android:text="@string/quem"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 />
 
-            <Spinner
-                android:id="@+id/quem_pagou_spinner"
-                android:layout_width="wrap_content"
+            <EditText
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:drawable/btn_dropdown"
-                android:spinnerMode="dropdown"/>
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/quem_pagou_ET"
+                />
         </LinearLayout>
-        -->
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -64,7 +65,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quando:"
+                android:text="@string/quando"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 />
@@ -95,7 +96,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quanto:"
+                android:text="@string/quanto"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 />
@@ -105,6 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
+                android:id="@+id/quanto_ET"
                 />
         </LinearLayout>
 

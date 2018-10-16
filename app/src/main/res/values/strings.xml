@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">RepApplication</string>
     <string name="pick_date">Escolha uma data</string>
+    <string name="quem">Quem pagou:</string>
+    <string name="quanto">Quanto:</string>
+    <string name="oque">O que:</string>
+    <string name="quando">Quando:</string>
+    <string name="escolha_quem">Escolha quem dividirá:</string>
 </resources>
