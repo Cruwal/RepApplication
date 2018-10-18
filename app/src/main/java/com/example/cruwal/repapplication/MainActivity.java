@@ -15,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent intent = getIntent();
+        EditText et = findViewById(R.id.quem_pagou_ET);
+        et.setText(intent.getStringExtra("account"));
+
     }
 
     public void showDatePickerDialog(View v) {
